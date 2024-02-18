@@ -1,11 +1,34 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import christMgocsm from '../../assets/logos/christMgocsm-trans.png'
 import '../../styles/Navbar.css'
 
 const Navbar = () => {
+
+
+    //Refs
+    const nav = useRef(null);
+
+    //Hide Nav on Scroll
+    let scrollY = window.scrollY;
+    useEffect(() => {
+        const hideNav = () => {
+            if (window.scrollY > scrollY) {
+                (nav.current as unknown as HTMLElement)?.classList.add("hide");
+            } else {
+                (nav.current as unknown as HTMLElement)?.classList.remove("hide");
+            }
+            scrollY = window.scrollY;
+        }
+    
+        window.addEventListener("scroll", hideNav);
+    
+        return () => window.removeEventListener("scroll", hideNav);
+    }, [])
+    
+
     return (
-        <div className='nav-container'>
+        <div className='nav-container' ref={nav}>
             <div className="left">
                 <Link to={"/"}>
                     <img className='christ-logo' src={christMgocsm} alt="" />
