@@ -64,8 +64,8 @@
 }
 
 .nav-container .middle ul li a:hover {
-    color: black; /* or any other color you want */
-    text-decoration: none; /* remove default underline */
+    color: black; 
+    text-decoration: none;
 }
 
 .nav-container .right {
