@@ -1,4 +1,4 @@
-.mainCard-container{
+.mainCard-container {
     margin: 40px;
     padding: 10px;
     width: 95%;
@@ -6,17 +6,19 @@
     height: 30rem;
     border-radius: 3.4rem;
     position: relative;
+    transition: transform 0.5s ease-in-out;
 }
 
-.mainCard-container .mainCard-secondaryContainer{
+.mainCard-container .mainCard-secondaryContainer {
     width: 100%;
     height: 100%;
-    /* background-color: var(--bg-color); */
     border-radius: 3.4rem;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.mainCard-container .mainCard-secondaryContainer .left{
+.mainCard-container .mainCard-secondaryContainer .left {
     margin-top: 4px;
     height: 35rem;
     width: 62%;
@@ -25,24 +27,62 @@
     left: 0;
     background-color: white;
     overflow: hidden;
-    transform: translate(0%,-10%);
+    transform: translate(0%, -10%);
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
 }
 
-.mainCard-container .mainCard-secondaryContainer .right{
-    /* background-color: antiquewhite; */
-    width: 100%;
+.mainCard-container .mainCard-secondaryContainer .right {
+    width: 38%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding-right: 5.9rem;
-    padding-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
     color: var(--bg-color);
+    font-family: "Inter";
 }
 
-.mainCard-container .mainCard-secondaryContainer .left img{
+
+.mainCard-container .mainCard-secondaryContainer .right .mainHeading {
+    display: flex;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right .mainHeading h1 {
+    font-style: normal;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.mainCard-container .mainCard-secondaryContainer .right .subHeading {
+    display: flex;
+    /* background-color: aquamarine; */
+    width: 100%;
+    padding-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainCard-container .mainCard-secondaryContainer .left img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+
+}
+
+
+.card {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card.active {
+    opacity: 1;
+    visibility: visible;
 }
