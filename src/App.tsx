@@ -4,20 +4,22 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Enchristo from './pages/Enchristo';
-// import './App.css';
+import Gallery from './pages/Gallery';
+import './App.css';
 
 function App() {
   return (
-    <BrowserRouter >
-      <div className="App">
+    <>
+      <BrowserRouter >
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/enchristo' element={<Enchristo/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/about-us' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/enchristo' element={<Enchristo />} />
         </Routes>
-      </div>
-    </ BrowserRouter >
+      </ BrowserRouter >
+    </>
 
   );
 }

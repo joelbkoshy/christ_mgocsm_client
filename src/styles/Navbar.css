@@ -1,0 +1,122 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    transition: transform 0.6s ease;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+
+}
+
+.nav-container>* {
+    flex: 1;
+}
+
+.nav-container .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.nav-container .left img.christ-logo {
+    width: 100px;
+}
+
+.nav-container .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .middle ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.nav-container .middle ul li a {
+    position: relative;
+    color: inherit; /* or specify the default text color */
+    text-decoration: none;
+}
+
+.nav-container .middle ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; 
+    bottom: 0;
+    left: 0;
+    background-color: #fa6400;
+    transition: width 0.3s ease; 
+    z-index: -1;
+}
+
+.nav-container .middle ul li a:hover::before {
+    width: 100%;
+}
+
+.nav-container .middle ul li a:hover {
+    color: black; /* or any other color you want */
+    text-decoration: none; /* remove default underline */
+}
+
+.nav-container .right {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.nav-container .right .button-5 {
+    align-items: center;
+    /* background-clip: padding-box; */
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 3.75rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 1rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
