@@ -34,6 +34,19 @@ const Home = () => {
     }
   ]
 
+  const motto_data: any[] = [
+    {
+      img_src: "assets/motto/worship.png",
+      mainHeading: "WORSHIP",
+    }, {
+      img_src: "assets/motto/study.png",
+      mainHeading: "STUDY",
+    }, {
+      img_src: "assets/motto/service.png",
+      mainHeading: "SERVICE",
+    }
+  ]
+
 
   return (
     <div >
@@ -41,11 +54,17 @@ const Home = () => {
       <div className="home-container">
         <MainCard carousel_data={value} />
         <div className="motto-container">
-          <h3 className='text-main fw-bold '>OUR MOTTO</h3>
+          <h3 className='text-main fw-bold img-shadow-light'>OUR MOTTO</h3>
           <div className="motto-cards">
-            <GlassCard />
-            <GlassCard />
-            <GlassCard />
+            {
+              motto_data?.map((motto) => {
+                return (
+                  <>
+                    <GlassCard  data={motto}/>
+                  </>
+                )
+              })
+            }
           </div>
         </div>
       </div>

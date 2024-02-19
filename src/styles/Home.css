@@ -7,7 +7,11 @@
     margin-top: 150px;
     width: 100%;
     height: 100%;
-    /* background-color: var(--main-color); */
+    /* Convert hex to RGB and set opacity */
+    --red: calc(var(--secondary-main) >> 16 & 255);
+    --green: calc(var(--secondary-main) >> 8 & 255);
+    --blue: calc(var(--secondary-main) & 255);
+    background-color: rgba(var(--red), var(--green), var(--blue), 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,18 +21,19 @@
 }
 
 .home-container .motto-container h3 {
-    font-size: 38px;
+    font-size: 45px;
     font-style: normal;
-
+    color: var(--main-color);
+    font-weight: bolder;
 }
 
-.home-container .motto-container .motto-cards{
+.home-container .motto-container .motto-cards {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 65px;
 }

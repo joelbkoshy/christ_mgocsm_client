@@ -227,7 +227,7 @@ body {
 }
 
 .img-shadow-light {
-    filter: drop-shadow(4px 6px #000000);
+    filter: drop-shadow(4px 6px 5px #e0a379);
 }
 
 .img-shadow-mid {
