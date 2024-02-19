@@ -57,8 +57,7 @@
 }
 
 .home-container .latestEvents-container .textContainer h1{
-    /* color: var(--main-color); */
-    color: #ff6600;
+    color: var(--five-main);
     letter-spacing: .5px;
     text-transform: uppercase;
     margin-top: 0;
@@ -70,8 +69,7 @@
 }
 
 .home-container .latestEvents-container .textContainer span p{
-    /* color: var(--main-color); */
-    color: #ff6600;
+    color: var(--five-main);
     letter-spacing: -.36px;
     -webkit-text-stroke-color: var(--text-dark);
     text-transform: none;
