@@ -5,6 +5,9 @@
     --text-light: #94949d;
     --main-color: #fa6400;
     --secondary-main: #f78a42;
+    --ternery-main:rgb(255, 179, 138);
+    --quarternery-main:#faebd7;
+    --five-main:#ff6600;
 }
 
 *,

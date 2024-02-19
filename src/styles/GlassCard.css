@@ -76,9 +76,11 @@
 }
 
 .container1 .wrapper .headContainer h1 {
+    font-family: "Anton",sans-serif;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 1.9rem;
-    font-weight: bold;
+    font-weight: 400;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;

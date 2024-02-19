@@ -41,12 +41,13 @@
     text-align: center;
     padding: 1.5rem;
     color: var(--bg-color);
-    font-family: "Inter";
+    font-family: "Anton";
 }
 
 
 .mainCard-container .mainCard-secondaryContainer .right .mainHeading {
     display: flex;
+
     /* background-color: antiquewhite; */
     width: 100%;
     align-items: center;
@@ -54,9 +55,10 @@
 }
 
 .mainCard-container .mainCard-secondaryContainer .right .mainHeading h1 {
-    font-style: normal;
+    letter-spacing: 1px;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 400;
+    line-height: 1.1em;
 }
 
 .mainCard-container .mainCard-secondaryContainer .right .subHeading {
@@ -69,6 +71,12 @@
     text-align: center;
 }
 
+.mainCard-container .mainCard-secondaryContainer .right .subHeading p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
 .mainCard-container .mainCard-secondaryContainer .left img {
     object-fit: cover;
     height: 100%;

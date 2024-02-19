@@ -54,17 +54,31 @@ const Home = () => {
       <div className="home-container">
         <MainCard carousel_data={value} />
         <div className="motto-container">
-          <h3 className='text-main fw-bold img-shadow-light'>OUR MOTTO</h3>
+          <h3 className='tex fw-bold img-shadow-light'>OUR MOTTO</h3>
           <div className="motto-cards">
             {
               motto_data?.map((motto) => {
                 return (
                   <>
-                    <GlassCard  data={motto}/>
+                    <GlassCard data={motto} />
                   </>
                 )
               })
             }
+          </div>
+        </div>
+        <div className="latestEvents-container">
+          <div className="textContainer">
+            <h1>LATEST NEWS</h1>
+            <span><p>Whether it's a thought-provoking seminar, an engaging workshop, a vibrant cultural event, or any other inspiring gathering, our passionate team at Christ MGOCSM is committed to crafting memorable experiences and fostering meaningful connections.</p></span>
+          </div>
+          <div className="carouselContainer">
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
           </div>
         </div>
       </div>
