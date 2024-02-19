@@ -91,6 +91,13 @@ body {
     }
 }
 
+.text-main{
+    color:var(--main-color);
+}
+.text-secondary{
+    color: var(--secondary-main);
+}
+
 .text-light {
     color: var(--text-light);
 }
