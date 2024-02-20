@@ -1,0 +1,8 @@
+.slickSliderContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100rem;
+    height: 100%;
+    /* overflow-y: auto; */
+    /* overflow: hidden; */
+}

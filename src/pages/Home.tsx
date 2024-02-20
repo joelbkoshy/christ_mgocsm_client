@@ -4,6 +4,7 @@ import MainCard from '../components/MainCard/MainCard'
 import '../styles/Home.css'
 import GlassCard from '../components/GlassCard/GlassCard'
 import CarouselCard from '../components/CarouselCard/CarouselCard'
+import SlickSlider from '../components/Slider/SlickSlider'
 
 const Home = () => {
 
@@ -48,6 +49,40 @@ const Home = () => {
     }
   ]
 
+  const latestNews: any[] = [
+    {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test1",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }, {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test2",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }, {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test3",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }, {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test4",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }, {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test5",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }, {
+      img_src: "assets/home/test.jpg",
+      dateTime: "November 29-30, 2023",
+      mainTitle: "test6",
+      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    }
+  ]
+
 
   return (
     <div >
@@ -74,9 +109,9 @@ const Home = () => {
             <span><p>Whether it's a thought-provoking seminar, an engaging workshop, a vibrant cultural event, or any other inspiring gathering, our passionate team at Christ MGOCSM is committed to crafting memorable experiences and fostering meaningful connections.</p></span>
           </div>
           <div className="carouselContainer">
+            <SlickSlider data={latestNews} />
             {/* <PauseOnHover /> */}
             {/* <h1>jiijeio</h1> */}
-            <CarouselCard />
           </div>
         </div>
       </div>

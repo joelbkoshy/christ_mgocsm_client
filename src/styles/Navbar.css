@@ -46,7 +46,7 @@
 
 .nav-container .middle ul li a {
     position: relative;
-    color: inherit; /* or specify the default text color */
+    color: var(--contrast-main); /* or specify the default text color */
     text-decoration: none;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .nav-container .middle ul li a:hover {
-    color: black; 
+    color: var(--contrast-main); 
     text-decoration: none;
 }
 

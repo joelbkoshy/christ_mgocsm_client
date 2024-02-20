@@ -1,7 +1,7 @@
 .carouselCard-container {
     display: flex;
     flex-direction: column;
-    width: 26rem;
+    width: 24rem;
     height: 28rem;
     background-color: var(--bg-color);
     position: relative;
@@ -98,6 +98,7 @@
     background-color: var(--main-color);
     position: absolute;
     top: auto;
+    z-index: -999;
     bottom: -10px;
     left: 10px;
     right: 10px;

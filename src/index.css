@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#slider-boxes{
+  display: flex !important;
+}
+.slick-list{
+  display: flex;
+  flex-direction: row;
+  width: 80rem;
+  height: 100%;
+}
+
+
+.slick-prev::before{
+  content: none;
+}
+
+
+.slick-prev{
+  margin-top: 17rem;
+  /* bottom: -67px; */
+  left: 0px;
+  width: 20rem;
+  height: 20rem;
+}
+
+.slick-next{
+  margin-top: 17rem;
+  position: unset;
+  bottom: -1px;
+  left:45px;
+}
