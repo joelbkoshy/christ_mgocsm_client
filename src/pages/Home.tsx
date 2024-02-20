@@ -5,6 +5,7 @@ import '../styles/Home.css'
 import GlassCard from '../components/GlassCard/GlassCard'
 import CarouselCard from '../components/CarouselCard/CarouselCard'
 import SlickSlider from '../components/Slider/SlickSlider'
+import PhotoCard from '../components/PhotoCard/PhotoCard'
 
 const Home = () => {
 
@@ -83,6 +84,11 @@ const Home = () => {
     }
   ]
 
+  const patronData: any = {
+    img_src: "assets/thirumenis/parumala_thirumeni.jpg",
+    mainHeading: "Our Patron",
+    subHeading:"St. Gregorios of Parumala"
+  }
 
   return (
     <div >
@@ -110,8 +116,21 @@ const Home = () => {
           </div>
           <div className="carouselContainer">
             <SlickSlider data={latestNews} />
-            {/* <PauseOnHover /> */}
-            {/* <h1>jiijeio</h1> */}
+          </div>
+        </div>
+        <div className="thirumenis-Container">
+          <div className='main-thirumenisContainer'>
+            <div className="patronContainer ">
+              <div className='shadow-contrast-mid border-contrast-mid '>
+                <PhotoCard data={patronData} style={{backgroundColor:'#5b3116'}}/>
+              </div>
+            </div>
+            {/* <div className="bishopsContainer">
+              <p>test1</p>
+              <p>test1</p>
+              <p>test1</p>
+
+            </div> */}
           </div>
         </div>
       </div>

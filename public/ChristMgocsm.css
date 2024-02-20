@@ -9,6 +9,7 @@
     --quarternery-main:#faebd7;
     --five-main:#ff6600;
     --contrast-main:#5b3116;
+    --light-main:#faebd7
 }
 
 *,
@@ -162,6 +163,10 @@ body {
     box-shadow: 4px 6px #000000;
 }
 
+.shadow-contrast-mid {
+    box-shadow: 6px 8px var(--contrast-main);
+}
+
 .shadow-mid {
     box-shadow: 6px 8px #000000;
 }
@@ -188,6 +193,10 @@ body {
 
 .border-white-mid {
     border: 4px solid #ffffff;
+}
+
+.border-contrast-mid{
+    border: 4px solid var(--contrast-main);
 }
 
 .border-white-dark {

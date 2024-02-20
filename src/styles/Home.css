@@ -1,4 +1,5 @@
 .home-container {
+    position: relative;
     min-height: 100vh;
     margin-top: 250px;
 }
@@ -91,4 +92,51 @@
     justify-content: flex-start;
     align-items: center;
     color: white;
+}
+
+/*===============LATEST EVENTS STYLES END===============*/
+
+/*===============THIRUMENIS PHOTO CONTAINER START===============*/
+
+.home-container .thirumenis-Container {
+    bottom: -97%;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 9rem; */
+    /* padding-right: 9rem; */
+    padding: 0 50px;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    background-color: var(--main-color);
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer {
+    background-color: var(--light-main);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer .patronContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .thirumenis-Container .main-thirumenisContainer .bishopsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
 }
