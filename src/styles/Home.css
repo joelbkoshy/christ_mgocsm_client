@@ -109,7 +109,7 @@
     padding: 0 50px;
     padding-top: 7rem;
     padding-bottom: 10rem;
-    background-color: var(--main-color);
+    background-color: var(--ternery-main);
 }
 
 .home-container .thirumenis-Container .main-thirumenisContainer {
@@ -146,3 +146,6 @@
     padding-top: 5rem;
     gap:50px
 }
+
+
+/*===============THIRUMENIS PHOTO CONTAINER END===============*/
