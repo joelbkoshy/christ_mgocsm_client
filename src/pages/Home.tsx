@@ -73,12 +73,8 @@ const Home = () => {
             <span><p>Whether it's a thought-provoking seminar, an engaging workshop, a vibrant cultural event, or any other inspiring gathering, our passionate team at Christ MGOCSM is committed to crafting memorable experiences and fostering meaningful connections.</p></span>
           </div>
           <div className="carouselContainer">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            {/* <PauseOnHover /> */}
+            <h1>jiijeio</h1>
           </div>
         </div>
       </div>
