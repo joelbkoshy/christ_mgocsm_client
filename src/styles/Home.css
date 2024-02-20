@@ -39,7 +39,7 @@
 
 /*===============LATEST EVENTS STYLES START===============*/
 
-.home-container .latestEvents-container{
+.home-container .latestEvents-container {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -51,13 +51,14 @@
     background-color: var(--quarternery-main);
 }
 
-.home-container .latestEvents-container .textContainer{
+.home-container .latestEvents-container .textContainer {
     width: 30%;
     height: 100%;
 }
 
-.home-container .latestEvents-container .textContainer h1{
-    color: var(--five-main);
+.home-container .latestEvents-container .textContainer h1 {
+    /* color: var(--five-main); */
+    color: var(--contrast-main);
     letter-spacing: .5px;
     text-transform: uppercase;
     margin-top: 0;
@@ -68,8 +69,9 @@
     line-height: 1.1em;
 }
 
-.home-container .latestEvents-container .textContainer span p{
-    color: var(--five-main);
+.home-container .latestEvents-container .textContainer span p {
+    /* color: var(--five-main); */
+    color: var(--contrast-main);
     letter-spacing: -.36px;
     -webkit-text-stroke-color: var(--text-dark);
     text-transform: none;
@@ -81,13 +83,12 @@
     line-height: 1.5em;
 }
 
-.home-container .latestEvents-container .carouselContainer{
+.home-container .latestEvents-container .carouselContainer {
     width: 70%;
     height: 100%;
-    background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: white;
 }

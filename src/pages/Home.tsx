@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import MainCard from '../components/MainCard/MainCard'
 import '../styles/Home.css'
 import GlassCard from '../components/GlassCard/GlassCard'
+import CarouselCard from '../components/CarouselCard/CarouselCard'
 
 const Home = () => {
 
@@ -74,7 +75,8 @@ const Home = () => {
           </div>
           <div className="carouselContainer">
             {/* <PauseOnHover /> */}
-            <h1>jiijeio</h1>
+            {/* <h1>jiijeio</h1> */}
+            <CarouselCard />
           </div>
         </div>
       </div>
