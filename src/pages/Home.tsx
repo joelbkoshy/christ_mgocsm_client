@@ -87,8 +87,29 @@ const Home = () => {
   const patronData: any = {
     img_src: "assets/thirumenis/parumala_thirumeni.jpg",
     mainHeading: "Our Patron",
-    subHeading:"St. Gregorios of Parumala"
+    subHeading: "St. Gregorios of Parumala"
   }
+
+  const bishopsData: any[] = [{
+    img_src: "assets/thirumenis/bava.jpg",
+    mainHeading: "His Holiness Moron Mar Baselius Marthoma Mathews III ",
+    subHeading: "Catholicose of the East and The Malankara Metropolitan",
+    h2_fontSize: "18px",
+    h5_fontSize: "12px"
+  }, {
+    img_src: "assets/thirumenis/seraphim_thirumeni.jpg",
+    mainHeading: "His Grace Abraham Mar Seraphim Metropolitan",
+    subHeading: "President of MGOCSM",
+    h2_fontSize: "18px",
+    h5_fontSize: "12px"
+  }, {
+    img_src: "assets/thirumenis/philexinos_thirumeni.jpg",
+    mainHeading: "His Grace Geevarghese Mar Philoxenos Metropolitan",
+    subHeading: "Assistant Metropolitan of Bangalore Diocese",
+    h2_fontSize: "18px",
+    h5_fontSize: "12px"
+  }
+  ]
 
   return (
     <div >
@@ -122,15 +143,21 @@ const Home = () => {
           <div className='main-thirumenisContainer'>
             <div className="patronContainer ">
               <div className='shadow-contrast-mid border-contrast-mid '>
-                <PhotoCard data={patronData} style={{backgroundColor:'#5b3116'}}/>
+                <PhotoCard data={patronData} style={{ backgroundColor: '#5b3116' }} />
               </div>
             </div>
-            {/* <div className="bishopsContainer">
-              <p>test1</p>
-              <p>test1</p>
-              <p>test1</p>
+            <div className="bishopsContainer">
+              {
+                bishopsData?.map((bishop: any) => {
+                  return (
+                    <div className='shadow-contrast-mid border-contrast-mid '>
+                      <PhotoCard data={bishop} style={{ backgroundColor: '#5b3116', width: '20rem', height: '25rem', fontSize: '10px' }} />
+                    </div>
 
-            </div> */}
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
       </div>

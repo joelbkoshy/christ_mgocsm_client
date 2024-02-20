@@ -138,5 +138,11 @@
     flex-direction: row;
     width: 100%;
     height: 100%;
-    background-color: brown;
+    /* background-color: brown; */
+    justify-content: center;
+    align-items:center ;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    gap:50px
 }
