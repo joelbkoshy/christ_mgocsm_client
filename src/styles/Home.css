@@ -123,7 +123,7 @@
     padding-bottom: 10rem;
 }
 
-.home-container .thirumenis-Container .main-thirumenisContainer .patronContainer{
+.home-container .thirumenis-Container .main-thirumenisContainer .patronContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -133,19 +133,67 @@
     align-items: center;
 }
 
-.home-container .thirumenis-Container .main-thirumenisContainer .bishopsContainer{
+.home-container .thirumenis-Container .main-thirumenisContainer .bishopsContainer {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-    /* background-color: brown; */
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     padding-left: 10rem;
     padding-right: 10rem;
     padding-top: 5rem;
-    gap:50px
+    gap: 50px
 }
 
+.home-container .thirumenis-Container .main-thirumenisContainer .achansContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    gap: 50px
+}
 
 /*===============THIRUMENIS PHOTO CONTAINER END===============*/
+
+/*===============SERVANTS PHOTO CONTAINER START===============*/
+
+.home-container .servants-Container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-main);
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .servants-Container .headingsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-container .servants-Container .headingsContainer h3 {
+    color: var(--contrast-main);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1em;
+}
+
+.home-container .servants-Container .servantsCarouselContainer{
+    padding-top: 3.5rem;
+    gap:25px;
+    display: flex;
+    flex-direction: row;
+}

@@ -6,6 +6,7 @@ import GlassCard from '../components/GlassCard/GlassCard'
 import CarouselCard from '../components/CarouselCard/CarouselCard'
 import SlickSlider from '../components/Slider/SlickSlider'
 import PhotoCard from '../components/PhotoCard/PhotoCard'
+import ServantsCard from '../components/ServantsCard/ServantsCard'
 
 const Home = () => {
 
@@ -111,6 +112,42 @@ const Home = () => {
   }
   ]
 
+  const achansData: any[] = [
+    {
+      img_src: "assets/achans/vivek_achan.jpg",
+      mainHeading: "Rev. Fr. Dr. Vivek Varghese",
+      subHeading: "MGOCSM GENERAL SECRETARY",
+      h2_fontSize: "15px",
+      h5_fontSize: "12px"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg",
+      mainHeading: "Rev. Fr. Jacob Varghese",
+      subHeading: "DIRECTOR & CHAPLAIN OF     BANGALORE MGOCSM ",
+      h2_fontSize: "15px",
+      h5_fontSize: "12px"
+    }
+  ]
+
+  const servantsData: any[] = [
+    {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }, {
+      img_src: "assets/achans/jikku_achan.jpg"
+    }
+  ]
+
   return (
     <div >
       <Navbar />
@@ -158,6 +195,31 @@ const Home = () => {
                 })
               }
             </div>
+            <div className="achansContainer">
+              {
+                achansData?.map((achan: any) => {
+                  return (
+                    <div className='shadow-contrast-mid border-contrast-mid '>
+                      <PhotoCard data={achan} style={{ backgroundColor: '#5b3116', width: '15rem', height: '18.75rem', fontSize: '10px' }} />
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
+        <div className="servants-Container">
+          <div className="headingsContainer">
+            <h3>MEET OUR OFFICIALS</h3>
+          </div>
+          <div className="servantsCarouselContainer">
+            {
+              servantsData?.map((servant: any) => {
+                return (
+                  <ServantsCard data={servant} />
+                )
+              })
+            }
           </div>
         </div>
       </div>
