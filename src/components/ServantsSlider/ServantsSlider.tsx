@@ -12,9 +12,11 @@ const ServantsSlider = ({ data }: any) => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
-    pauseOnHover:false
+    pauseOnHover:false,
+    prevArrow: <></>,
+    nextArrow: <></>
   };
 
   return (

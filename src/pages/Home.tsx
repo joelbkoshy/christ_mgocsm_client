@@ -8,6 +8,7 @@ import SlickSlider from '../components/Slider/SlickSlider'
 import PhotoCard from '../components/PhotoCard/PhotoCard'
 import ServantsCard from '../components/ServantsCard/ServantsCard'
 import ServantsSlider from '../components/ServantsSlider/ServantsSlider'
+import Testimonials from '../components/Testimonials/Testimonials'
 
 const Home = () => {
 
@@ -140,6 +141,11 @@ const Home = () => {
     name: "Joel B Koshy",
     position: "Vice President(Male)",
     class: "6 MCA B"
+  } , {
+    img_src: "assets/servants/lisa.jpg",
+    name: "Lisha Shibu George",
+    position: "Vice President(Female)",
+    class: "6 BCA B"
   }, {
     img_src: "assets/servants/abin.jpg",
     name: "Abin Joshua Binu",
@@ -150,7 +156,14 @@ const Home = () => {
     name: "Alivi Susan Kurian",
     position: "Secretary(Female)",
     class: "4 BA PEP B"
-  }, {
+  }
+    , {
+    img_src: "assets/servants/ninon.jpg",
+    name: "Ninon Thomas Chittadathu",
+    position: "Treasurer",
+    class: "4 MSAS"
+  }
+    , {
     img_src: "assets/servants/chris.jpg",
     name: "Cris Mariam Saj",
     position: "Interpersonal Head",
@@ -163,10 +176,16 @@ const Home = () => {
     class: "6 PSECO"
 
   }, {
-    img_src: "assets/servants/chris.jpg",
-    name: "Cris Mariam Saj",
-    position: "Interpersonal Head",
-    class: "4 BBA F"
+    img_src: "assets/servants/joel_johnson.jpg",
+    name: "Joel Varghese Johnson",
+    position: "Magazine Head",
+    class: "4 CME"
+
+  }, {
+    img_src: "assets/servants/jeremy.jpg",
+    name: "Jeremy Mathew Jose",
+    position: "Sports Coordinator",
+    class: "4 CMS"
 
   },
   ]
@@ -236,15 +255,11 @@ const Home = () => {
             <h3>MEET OUR OFFICIALS</h3>
           </div>
           <div className="servantsCarouselContainer">
-            {/* {
-              servantsData?.map((servant: any) => {
-                return (
-                  <ServantsCard data={servant} />
-                )
-              })
-            } */}
             <ServantsSlider data={servantsData} />
           </div>
+        </div>
+        <div className="testimonialsHomeContainer">
+          <Testimonials />
         </div>
       </div>
     </div>
