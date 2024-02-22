@@ -168,7 +168,7 @@
     flex-direction: column;
     background-color: var(--light-main);
     padding-top: 5rem;
-    padding-bottom:5rem ;
+    padding-bottom: 5rem;
     justify-content: center;
     align-items: center;
 }
@@ -192,10 +192,19 @@
     line-height: 1.1em;
 }
 
-.home-container .servants-Container .servantsCarouselContainer{
+.home-container .servants-Container .servantsCarouselContainer {
     padding-top: 3.5rem;
-    gap:25px;
+    gap: 25px;
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+
+
+.home-container .testimonialsHomeContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }

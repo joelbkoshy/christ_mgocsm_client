@@ -9,6 +9,7 @@ import PhotoCard from '../components/PhotoCard/PhotoCard'
 import ServantsCard from '../components/ServantsCard/ServantsCard'
 import ServantsSlider from '../components/ServantsSlider/ServantsSlider'
 import Testimonials from '../components/Testimonials/Testimonials'
+import TestimonialsSlider from '../components/TestimonialsSlider/TestimonialsSlider'
 
 const Home = () => {
 
@@ -190,6 +191,27 @@ const Home = () => {
   },
   ]
 
+
+  const testimonialsData : any[] = [
+    {
+      img_src:"assets/servants/jeremy.jpg",
+      name:"Sports Coordinator",
+      testimony:"WORKING WITH EVENT AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
+    },{
+      img_src:"assets/servants/abin.jpg",
+      name:"Secretary(Male)",
+      testimony:"COLLABORATING WITH THE EVENT AGENCY WAS AN INCREDIBLY ENJOYABLE EXPERIENCE! THEY DISPLAYED UTMOST PROFESSIONALISM AND EXCELLENT ORGANIZATION THROUGHOUT THE ENTIRE PROCESS, GOING THE EXTRA MILE TO GUARANTEE THE SUCCESS OF OUR EVENT. THEIR METICULOUS ATTENTION TO DETAIL, INNOVATIVE CONCEPTS, AND FLAWLESS COORDINATION TRULY SET THEM APART"
+    },    {
+      img_src:"assets/servants/joel.jpg",
+      name:"Sports Coordinator",
+      testimony:"WORKING WITH EVENT AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
+    },{
+      img_src:"assets/servants/sandra.jpg",
+      name:"Secretary(Male)",
+      testimony:"COLLABORATING WITH THE EVENT AGENCY WAS AN INCREDIBLY ENJOYABLE EXPERIENCE! THEY DISPLAYED UTMOST PROFESSIONALISM AND EXCELLENT ORGANIZATION THROUGHOUT THE ENTIRE PROCESS, GOING THE EXTRA MILE TO GUARANTEE THE SUCCESS OF OUR EVENT. THEIR METICULOUS ATTENTION TO DETAIL, INNOVATIVE CONCEPTS, AND FLAWLESS COORDINATION TRULY SET THEM APART"
+    }
+  ]
+
   return (
     <div >
       <Navbar />
@@ -259,7 +281,7 @@ const Home = () => {
           </div>
         </div>
         <div className="testimonialsHomeContainer">
-          <Testimonials />
+          <TestimonialsSlider data={testimonialsData} />
         </div>
       </div>
     </div>

@@ -3,18 +3,18 @@ import React from 'react'
 import '../../styles/Testimonials.css'
 
 
-const Testimonials = () => {
+const Testimonials = ({data}:any) => {
   return (
     <div className='testimonialsContainer'>
       <div className="testimonialContentContainer">
         <div className="aluminiContainer">
           <div className="imgContainer">
-            <img src="assets/achans/jikku_achan.jpg" alt="" />
+            <img src={data?.img_src} alt="" />
           </div>
           <div className="nameContainer">
             <span className='nameText'>
               <div className="firstLine">
-                -&nbsp;<p>Rev. Fr. Jacob Varghese,
+                -&nbsp;<p>{data?.name},
                   <br />
                   CHAPLAIN
                 </p>
