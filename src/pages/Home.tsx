@@ -7,6 +7,7 @@ import CarouselCard from '../components/CarouselCard/CarouselCard'
 import SlickSlider from '../components/Slider/SlickSlider'
 import PhotoCard from '../components/PhotoCard/PhotoCard'
 import ServantsCard from '../components/ServantsCard/ServantsCard'
+import ServantsSlider from '../components/ServantsSlider/ServantsSlider'
 
 const Home = () => {
 
@@ -122,30 +123,52 @@ const Home = () => {
     }, {
       img_src: "assets/achans/jikku_achan.jpg",
       mainHeading: "Rev. Fr. Jacob Varghese",
-      subHeading: "DIRECTOR & CHAPLAIN OF     BANGALORE MGOCSM ",
+      subHeading: "DIRECTOR & CHAPLAIN OF BANGALORE MGOCSM ",
       h2_fontSize: "15px",
       h5_fontSize: "12px"
     }
   ]
 
-  const servantsData: any[] = [
-    {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }, {
-      img_src: "assets/achans/jikku_achan.jpg"
-    }
+  const servantsData: any[] = [{
+    img_src: "assets/servants/dn_dennis.jpg",
+    name: "Dn. Dennis Reji",
+    position: "Mentor",
+    class: "2 MSW CCP"
+  },
+  {
+    img_src: "assets/servants/joel.jpg",
+    name: "Joel B Koshy",
+    position: "Vice President(Male)",
+    class: "6 MCA B"
+  }, {
+    img_src: "assets/servants/abin.jpg",
+    name: "Abin Joshua Binu",
+    position: "Secretary(Male)",
+    class: "4 BCOM F&A B"
+  }, {
+    img_src: "assets/servants/alivi .jpg",
+    name: "Alivi Susan Kurian",
+    position: "Secretary(Female)",
+    class: "4 BA PEP B"
+  }, {
+    img_src: "assets/servants/chris.jpg",
+    name: "Cris Mariam Saj",
+    position: "Interpersonal Head",
+    class: "4 BBA F"
+
+  }, {
+    img_src: "assets/servants/sandra.jpg",
+    name: "Sandra Sara Luke",
+    position: "Media Head",
+    class: "6 PSECO"
+
+  }, {
+    img_src: "assets/servants/chris.jpg",
+    name: "Cris Mariam Saj",
+    position: "Interpersonal Head",
+    class: "4 BBA F"
+
+  },
   ]
 
   return (
@@ -213,13 +236,14 @@ const Home = () => {
             <h3>MEET OUR OFFICIALS</h3>
           </div>
           <div className="servantsCarouselContainer">
-            {
+            {/* {
               servantsData?.map((servant: any) => {
                 return (
                   <ServantsCard data={servant} />
                 )
               })
-            }
+            } */}
+            <ServantsSlider data={servantsData} />
           </div>
         </div>
       </div>

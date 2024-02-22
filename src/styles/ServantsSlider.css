@@ -1,0 +1,15 @@
+.servantsSliderContainer{
+    width: 100%;
+}
+
+.servantsSliderContainer .slick-slider{
+    width: 100%;
+}
+
+.servantsSliderContainer .slick-slider button{
+    display: none;
+}
+
+.servantsSliderContainer .slick-slider .slick-list{
+    width: 100%;
+}

@@ -8,9 +8,9 @@ const ServantsCard = (props: any) => {
         <div className='servantsCard-Container'>
             <img src={data?.img_src} alt="Servant" />
             <div className="textContainer">
-                <div className='hero-marquee-item__name'>Random Guy</div>
-                <div className='hero-marquee-item__name'>Vice President</div>
-                <div className='hero-marquee-item__name'>6 MCA B</div>
+                <div className='hero-marquee-item__name'>{data?.name}</div>
+                <div className='hero-marquee-item__name'>{data?.position}</div>
+                <div className='hero-marquee-item__name'>{data?.class}</div>
             </div>
         </div>
     )
