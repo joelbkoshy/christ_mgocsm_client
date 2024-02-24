@@ -10,25 +10,40 @@
     width: 100%;
     height: 100%;
     text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: flex;
     flex-direction: row;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer {
+
+.testimonialsContainer .testimonialContentContainer .slick-slider .slick-list  *{
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    /* text-transform: uppercase; */
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer {
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer .imgContainer {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer .imgContainer {
     width: 160px;
     height: 160px;
     flex-grow: 1;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer .imgContainer img {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer .imgContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -36,7 +51,7 @@
     border-radius: 50%;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer .nameContainer {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer .nameContainer {
     display: flex;
     flex-direction: column;
     color: var(--bg-color);
@@ -45,32 +60,32 @@
     padding: 0;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer .nameContainer .nameText {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer .nameContainer .nameText {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 1px;
     letter-spacing: .5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0;
-    font-family: Anton, sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 
-.testimonialsContainer .testimonialContentContainer .aluminiContainer .nameContainer .nameText .firstLine {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiContainer .nameContainer .nameText .firstLine {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
 
-.testimonialsContainer .testimonialContentContainer .aluminiWordsContainer {
+.testimonialsContainer .testimonialContentContainer .testimonyMapContainer .aluminiWordsContainer {
     width: 60%;
     color: var(--bg-color);
     letter-spacing: .5px;
     text-transform: uppercase;
-    font-family: Anton, sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 30px;
     line-height: 1.2em;
 }

@@ -144,7 +144,7 @@ const Home = () => {
     class: "6 MCA B"
   } , {
     img_src: "assets/servants/lisa.jpg",
-    name: "Lisha Shibu George",
+    name: "Lisa Shibu George",
     position: "Vice President(Female)",
     class: "6 BCA B"
   }, {
@@ -177,6 +177,12 @@ const Home = () => {
     class: "6 PSECO"
 
   }, {
+    img_src: "assets/servants/saniya.jpg",
+    name: "Saniya Sunil Jacob",
+    position: "Theshmeshtho Head (Choir)",
+    class: "6 BCOM IF"
+
+  } ,{
     img_src: "assets/servants/joel_johnson.jpg",
     name: "Joel Varghese Johnson",
     position: "Magazine Head",
@@ -195,20 +201,19 @@ const Home = () => {
   const testimonialsData : any[] = [
     {
       img_src:"assets/servants/jeremy.jpg",
-      name:"Sports Coordinator",
-      testimony:"WORKING WITH EVENT AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
+      name:"Jeremy Mathew Jose",
+      position :"Sports Coordinator",
+      testimony:"Working With Event AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
     },{
       img_src:"assets/servants/abin.jpg",
-      name:"Secretary(Male)",
+      name:"Abin Joshua Binu",
+      position:"Secretary(Male)",
       testimony:"COLLABORATING WITH THE EVENT AGENCY WAS AN INCREDIBLY ENJOYABLE EXPERIENCE! THEY DISPLAYED UTMOST PROFESSIONALISM AND EXCELLENT ORGANIZATION THROUGHOUT THE ENTIRE PROCESS, GOING THE EXTRA MILE TO GUARANTEE THE SUCCESS OF OUR EVENT. THEIR METICULOUS ATTENTION TO DETAIL, INNOVATIVE CONCEPTS, AND FLAWLESS COORDINATION TRULY SET THEM APART"
     },    {
       img_src:"assets/servants/joel.jpg",
-      name:"Sports Coordinator",
+      name:"Joel B Koshy",
+      position:"Vice President(Male)",
       testimony:"WORKING WITH EVENT AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
-    },{
-      img_src:"assets/servants/sandra.jpg",
-      name:"Secretary(Male)",
-      testimony:"COLLABORATING WITH THE EVENT AGENCY WAS AN INCREDIBLY ENJOYABLE EXPERIENCE! THEY DISPLAYED UTMOST PROFESSIONALISM AND EXCELLENT ORGANIZATION THROUGHOUT THE ENTIRE PROCESS, GOING THE EXTRA MILE TO GUARANTEE THE SUCCESS OF OUR EVENT. THEIR METICULOUS ATTENTION TO DETAIL, INNOVATIVE CONCEPTS, AND FLAWLESS COORDINATION TRULY SET THEM APART"
     }
   ]
 
@@ -281,7 +286,8 @@ const Home = () => {
           </div>
         </div>
         <div className="testimonialsHomeContainer">
-          <TestimonialsSlider data={testimonialsData} />
+          {/* <TestimonialsSlider data={testimonialsData} /> */}
+          <Testimonials data={testimonialsData} />
         </div>
       </div>
     </div>
