@@ -22,22 +22,22 @@ const SlickSlider = ({ data }: slickData) => {
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: true,
-        prevArrow:<LeftArrow/>,
-        nextArrow:<RightArrow />
-      };
+        prevArrow: <LeftArrow />,
+        nextArrow: <RightArrow />
+    };
 
     return (
         <div className='slickSliderContainer'>
             <Slider {...settings}>
-            {
-                data?.map((item: any) => {
-                    return (
-                        <>
-                            <CarouselCard data={item} />
-                        </>
-                    )
-                })
-            }
+                {
+                    data?.map((item: any) => {
+                        return (
+                            <>
+                                <CarouselCard data={item} />
+                            </>
+                        )
+                    })
+                }
             </Slider>
         </div>
     )
