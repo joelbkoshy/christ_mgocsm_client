@@ -130,6 +130,8 @@ span {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.1em;
+    transition: all ease 1.2s;
+
 }
 
 .footerWrapper .NavItems a span:hover{
