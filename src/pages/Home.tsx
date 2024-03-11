@@ -10,6 +10,7 @@ import ServantsCard from '../components/ServantsCard/ServantsCard'
 import ServantsSlider from '../components/ServantsSlider/ServantsSlider'
 import Testimonials from '../components/Testimonials/Testimonials'
 import TestimonialsSlider from '../components/TestimonialsSlider/TestimonialsSlider'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
 
@@ -290,6 +291,7 @@ const Home = () => {
           <Testimonials data={testimonialsData} />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
