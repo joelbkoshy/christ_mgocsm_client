@@ -3,13 +3,10 @@ import Navbar from '../components/Navbar/Navbar'
 import MainCard from '../components/MainCard/MainCard'
 import '../styles/Home.css'
 import GlassCard from '../components/GlassCard/GlassCard'
-import CarouselCard from '../components/CarouselCard/CarouselCard'
 import SlickSlider from '../components/Slider/SlickSlider'
 import PhotoCard from '../components/PhotoCard/PhotoCard'
-import ServantsCard from '../components/ServantsCard/ServantsCard'
 import ServantsSlider from '../components/ServantsSlider/ServantsSlider'
 import Testimonials from '../components/Testimonials/Testimonials'
-import TestimonialsSlider from '../components/TestimonialsSlider/TestimonialsSlider'
 import Footer from '../components/Footer/Footer'
 
 const Home = () => {
@@ -57,34 +54,42 @@ const Home = () => {
 
   const latestNews: any[] = [
     {
+      img_src: "assets/home/vivek.jpg",
+      dateTime: "March 16, 2024",
+      mainTitle: "CAMPUS TOUR",
+      news: "Organised campus tour with Rev.Fr.Vivek Varghese after welcoming to Christ MGOCSM Family"
+    },
+    {
+      img_src: "assets/home/nombu.jpg",
+      dateTime: "March 13, 2024",
+      mainTitle: "Holy Lent",
+      news: "Conducting evening prayer during lent coordinated by Rev. Fr. Jacob Varghese"
+    }, 
+    {
       img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test1",
+      dateTime: "February 11, 2023",
+      mainTitle: "Holy Qurbana",
       news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+    },
+    {
+      img_src: "assets/home/4.jpg",
+      dateTime: "February 3,2024",
+      mainTitle: "ANNUAL general Body meeting",
+      news: "Conducted annual general body meeting at St Thomas Forane Church"
     }, {
-      img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test2",
-      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+      img_src: "assets/home/3.jpg",
+      dateTime: "January 22, 2024",
+      mainTitle: "THADAKAM CHARITY VISIT",
+      news: "Visited  and contributed to Christu Shishya Ashramam at Thadakam, Coimbatore "
     }, {
-      img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test3",
-      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
-    }, {
-      img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test4",
-      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
-    }, {
-      img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test5",
-      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
-    }, {
-      img_src: "assets/home/test.jpg",
-      dateTime: "November 29-30, 2023",
-      mainTitle: "test6",
+      img_src: "assets/home/5.jpg",
+      dateTime: "January 20, 2024",
+      mainTitle: "Jamming Session",
+      news: "Organised Jamming Session near Bird's Park "
+    },  {
+      img_src: "assets/home/2.jpg",
+      dateTime: "January 11, 2023",
+      mainTitle: "ORTHODOX THEOLOGY SEMINARY STUDENTS VISIT",
       news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
     }
   ]
@@ -143,7 +148,7 @@ const Home = () => {
     name: "Joel B Koshy",
     position: "Vice President(Male)",
     class: "6 MCA B"
-  } , {
+  }, {
     img_src: "assets/servants/lisa.jpg",
     name: "Lisa Shibu George",
     position: "Vice President(Female)",
@@ -183,7 +188,7 @@ const Home = () => {
     position: "Theshmeshtho Head (Choir)",
     class: "6 BCOM IF"
 
-  } ,{
+  }, {
     img_src: "assets/servants/joel_johnson.jpg",
     name: "Joel Varghese Johnson",
     position: "Magazine Head",
@@ -199,22 +204,22 @@ const Home = () => {
   ]
 
 
-  const testimonialsData : any[] = [
+  const testimonialsData: any[] = [
     {
-      img_src:"assets/servants/jeremy.jpg",
-      name:"Jeremy Mathew Jose",
-      position :"Sports Coordinator",
-      testimony:"Working With Event AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
-    },{
-      img_src:"assets/servants/abin.jpg",
-      name:"Abin Joshua Binu",
-      position:"Secretary(Male)",
-      testimony:"COLLABORATING WITH THE EVENT AGENCY WAS AN INCREDIBLY ENJOYABLE EXPERIENCE! THEY DISPLAYED UTMOST PROFESSIONALISM AND EXCELLENT ORGANIZATION THROUGHOUT THE ENTIRE PROCESS, GOING THE EXTRA MILE TO GUARANTEE THE SUCCESS OF OUR EVENT. THEIR METICULOUS ATTENTION TO DETAIL, INNOVATIVE CONCEPTS, AND FLAWLESS COORDINATION TRULY SET THEM APART"
-    },    {
-      img_src:"assets/servants/joel.jpg",
-      name:"Joel B Koshy",
-      position:"Vice President(Male)",
-      testimony:"WORKING WITH EVENT AGENCY WAS AN ABSOLUTE DELIGHT! FROM CONCEPT TO EXECUTION, THEY WERE PROFESSIONAL, ORGANIZED, AND TRULY WENT ABOVE AND BEYOND TO ENSURE OUR EVENT WAS A SUCCESS. THE ATTENTION TO DETAIL, CREATIVE IDEAS, AND SEAMLESS COORDINATION MADE ALL THE DIFFERENCE. OUR ATTENDEES WERE THRILLED, AND WE RECEIVED RAVE REVIEWS FOR THE FLAWLESS EXECUTION."
+      img_src: "assets/servants/jeremy.jpg",
+      name: "Jeremy Mathew Jose",
+      position: "Sports Coordinator",
+      testimony: "My journey with Christ MGOCSM has been transformative, fostering not only my academic resilience but also nurturing my character, guiding me through challenges and shaping me into a stronger individual."
+    }, {
+      img_src: "assets/servants/abin.jpg",
+      name: "Abin Joshua Binu",
+      position: "Secretary (Male)",
+      testimony: "Within Christ Mgocsm, I found not just companionship, but a sacred bond of unity and understanding, illuminating our spiritual journey with the radiant light of enduring friendship."
+    }, {
+      img_src: "assets/servants/joel.jpg",
+      name: "Joel B Koshy",
+      position: "Vice President (Male)",
+      testimony: "In Christ Mgocsm, I discovered more than a spiritual community, it became my sanctuary, my home away from home, where bonds of friendship flourish and souls find solace together."
     }
   ]
 

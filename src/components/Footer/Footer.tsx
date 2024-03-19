@@ -29,9 +29,9 @@ const Footer = () => {
             <a href=""><span>Contact</span></a>
           </div>
           <div className='socialMediaHandles'>
-            <a href="https://www.instagram.com/christmgocsm?utm_source=qr&igsh=MWIxNDdjb3c5MWZkZA== "><img src={Insta} alt="" className='InstaLogo' /></a>
-            <a href="https://m.facebook.com/christmqocsm"><img src={FB} alt="" /></a>
-            <a href="https://youtube.com/@CHRlSTMGOCSM?si=xQVuQ3H12-UPWBZn"><img src={YT} alt="" /></a>
+            <a href="https://www.instagram.com/christmgocsm"><img src={Insta} alt="" className='InstaLogo' /></a>
+            <a href="https://www.facebook.com/christmgocsm"><img src={FB} alt="" /></a>
+            <a href="https://www.youtube.com/@CHRISTMGOCSM"><img src={YT} alt="" /></a>
           </div>
         </div>
       </div>

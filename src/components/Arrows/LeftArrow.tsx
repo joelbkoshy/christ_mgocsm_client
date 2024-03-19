@@ -7,7 +7,7 @@ const LeftArrow = (props: any) => {
     const { onClick,style } = props
 
     return (
-            <div className={`left-arrow slick-arrow`} onClick={onClick} style={{ ...style}}>
+            <div className={`left-arrow`} onClick={onClick} style={{ ...style}}>
             </div>
     )
 }

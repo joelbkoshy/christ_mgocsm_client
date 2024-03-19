@@ -1,4 +1,4 @@
-.left-arrow-testimonial{
+.left-arrow-testimonial {
     width: 60px;
     height: 60px;
     border: 1px solid var(--bg-color);
@@ -23,3 +23,9 @@
     background-color: transparent;
 }
 
+@media screen and (max-width:1440px) {
+    .left-arrow-testimonial {
+        bottom: -75px;
+        left: 0;
+    }
+}

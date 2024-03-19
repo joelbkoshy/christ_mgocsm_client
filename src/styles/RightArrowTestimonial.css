@@ -21,3 +21,10 @@
     background-color: var(--main-color);
     background-image: url('/src//assets/arrows/rightArrow.png');
 }
+
+@media screen and (max-width:1440px) {
+    .right-arrow-testimonial {
+        bottom: -75px;
+        left: 70px;
+    }
+}

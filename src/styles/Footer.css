@@ -29,8 +29,19 @@
     line-height: 1.1em;
 }
 
-span {
+.footerWrapper .NavItems a span{
+
     /* color: var(--five-main); */
+    color: var(--five-main);
+    letter-spacing: -.2px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-mainContainer span{
     color: var(--five-main);
     letter-spacing: -.2px;
     margin-bottom: 50px;

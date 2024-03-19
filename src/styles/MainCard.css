@@ -113,6 +113,12 @@
 }
 
 
+@media screen and (max-width:1308) {
+    .mainCard-container .mainCard-secondaryContainer .left{
+        position: relative;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0.3;

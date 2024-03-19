@@ -19,9 +19,9 @@ const Testimonials = ({ data }: any) => {
     speed: 500,
     autoplaySpeed: 5000,
     cssEase: "linear",
-    pauseOnHover:false,
-    prevArrow:<LeftArrowTestimonial/>,
-    nextArrow:<RightArrowTestimonial/>
+    pauseOnHover: false,
+    prevArrow: <LeftArrowTestimonial />,
+    nextArrow: <RightArrowTestimonial />
   };
 
 
@@ -50,7 +50,9 @@ const Testimonials = ({ data }: any) => {
                     </div>
                   </div>
                   <div className="aluminiWordsContainer">
-                    "{testimony?.testimony}"
+                    <span>
+                      "{testimony?.testimony}"
+                    </span>
                   </div>
                 </div>
 

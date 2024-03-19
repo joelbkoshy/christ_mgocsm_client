@@ -12,11 +12,50 @@ const ServantsSlider = ({ data }: any) => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     cssEase: "linear",
-    pauseOnHover:false,
+    pauseOnHover: false,
     prevArrow: <></>,
-    nextArrow: <></>
+    nextArrow: <></>,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      }, {
+        breakpoint: 983,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 754,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2 
+        }
+      },
+      {
+        breakpoint: 493,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2 
+        }
+      }
+    ]
   };
 
   return (
@@ -25,7 +64,7 @@ const ServantsSlider = ({ data }: any) => {
         {
           data?.map((servant: any) => {
             return (
-              <ServantsCard data={servant}/>
+              <ServantsCard data={servant} />
             )
           })
         }
