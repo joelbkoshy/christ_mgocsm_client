@@ -4,9 +4,13 @@ import Logo from '../../assets/logos/christMgocsm-trans.png'
 import Insta from '../../assets/logos/instagram.png'
 import FB from '../../assets/logos/facebook.png'
 import YT from '../../assets/logos/youtube.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const Footer = () => {
+
+const navigate = useNavigate()
+
   return (
     <div className='footer-mainContainer'>
       <div className="christMgocsmLogoContainer">
@@ -22,11 +26,11 @@ const Footer = () => {
       <div className="footerFinalBorderContainer">
         <div className="footerWrapper">
           <div className="NavItems">
-            <a href=""><span>Home</span></a>
-            <a href=""><span>Enchristo'24</span></a>
-            <a href=""><span>About Us</span></a>
-            <a href=""><span>Gallery</span></a>
-            <a href=""><span>Contact</span></a>
+            <a onClick={()=>navigate("/")}><span>Home</span></a>
+            <a onClick={()=>navigate("/enchristo")}><span>Enchristo'24</span></a>
+            <a onClick={()=>navigate("/about-us")}><span>About Us</span></a>
+            <a onClick={()=>navigate("/gallery")}><span>Gallery</span></a>
+            <a onClick={()=>navigate("/contact")}><span>Contact</span></a>
           </div>
           <div className='socialMediaHandles'>
             <a href="https://www.instagram.com/christmgocsm"><img src={Insta} alt="" className='InstaLogo' /></a>

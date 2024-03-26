@@ -44,10 +44,32 @@
         vertical-align: baseline;
 }
 
+/* @media screen  and (max-width:400px){
+    .servantsCard-Container{
+        width: 10rem;
+        height: 15rem;
+    }
+
+    .servantsCard-Container .textContainer{
+        font-size: 70%;
+    }
+} */
+
+@media screen  and (max-width:500px){
+    .servantsCard-Container{
+        width: 12rem;
+        height: 16rem;
+    }
+
+    .servantsCard-Container .textContainer{
+        font-size: 70%;
+    }
+}
 
 
 
-@media screen  and (max-width:375px){
+
+@media screen  and (max-width:380px){
     .servantsCard-Container{
         width: 10rem;
         height: 15rem;

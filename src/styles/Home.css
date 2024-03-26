@@ -197,6 +197,17 @@
         flex-direction: column;
     }
 
+    .home-container .thirumenis-Container{
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width:633px) {
+    .home-container .thirumenis-Container .main-thirumenisContainer .achansContainer{
+        flex-direction: column;
+    }
 }
 
 /*===============THIRUMENIS PHOTO CONTAINER END===============*/
@@ -247,4 +258,10 @@
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width:450px) {
+    .home-container .servants-Container .headingsContainer h3{
+        font-size: 35px;
+    }
 }

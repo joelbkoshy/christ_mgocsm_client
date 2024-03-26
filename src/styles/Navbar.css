@@ -232,6 +232,7 @@
     .nav-container .bigMenuActive{
         display: none;
     }
+    
 }
 
 @media screen and (min-width:1261px) {
@@ -275,6 +276,23 @@
     .nav-container .right img {
         display: block;
         width: 40px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+
+}
+
+
+@media screen and (max-width:650px) {
+    .nav-container .left img.christ-logo {
+        width: 80px;
+        z-index: 999;
+    }
+
+    .nav-container .right img {
+        display: block;
+        width: 35px;
         cursor: pointer;
         z-index: 999;
     }

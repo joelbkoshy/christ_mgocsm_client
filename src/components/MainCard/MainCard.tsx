@@ -19,23 +19,23 @@ const MainCard: React.FC<MainCardProps> = ({ carousel_data }) => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             mainImgOverlay.current.style.opacity = 1;
-            setTimeout(()=>{
+            setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % carousel_data.length);
-            },400)
+            }, 400)
         }, 5000);
 
         return () => clearInterval(intervalId);
     }, [carousel_data.length]);
 
-    useEffect(()=>{
-        mainImgOverlay.current.style.opacity = 0; 
-    },[currentIndex])
+    useEffect(() => {
+        mainImgOverlay.current.style.opacity = 0;
+    }, [currentIndex])
 
     return (
         <div className='mainCard-container'>
             <div className='mainCard-secondaryContainer'>
                 <div className="left rounded-20 shadow-white-mid border-white-mid">
-                    <div className="overlay" ref={mainImgOverlay}/>
+                    <div className="overlay" ref={mainImgOverlay} />
                     <img src={carousel_data[currentIndex].img_src} alt="" className='' id="main-img" />
                 </div>
                 <div className="right">

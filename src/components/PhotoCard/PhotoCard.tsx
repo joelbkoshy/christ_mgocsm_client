@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/PhotoCard.css'
 
 
@@ -9,6 +9,18 @@ const PhotoCard = (props: any) => {
     const { data, style } = props
 
     tempStyle = style
+
+    const [currentStyle, setCurrentStyle] = useState<any>()
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 550) {
+                console.log(style)
+            }
+        }
+        handleResize();
+    }, [])
 
     return (
         <div className='photoCard-Container' style={{ ...tempStyle }} >
