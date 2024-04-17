@@ -48,6 +48,16 @@ const MainCard: React.FC<MainCardProps> = ({ carousel_data }) => {
                         </p>
                     </div>
                 </div>
+                <div className="bottom bubble-top-right bubble-top-left ">
+                    <div className="mainHeading">
+                        <h1>{carousel_data[currentIndex].mainHeading}</h1>
+                    </div>
+                    <div className="subHeading">
+                        <p>
+                            {carousel_data[currentIndex].subHeading}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );

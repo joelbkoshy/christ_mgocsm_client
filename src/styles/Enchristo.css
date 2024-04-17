@@ -1,0 +1,48 @@
+.mainRelativeEnchristoContainer{
+    /* position: relative; */
+}
+
+
+.mainEnchristoContainer{
+    background-color: var(--quarternery-main);
+    height: 80vh;
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mainEnchristoContainer .imgPlusTitleContainer{
+display: flex;
+flex-direction: row;
+margin-left: 10rem;
+margin-right: 10rem;
+width: 80%;
+height: 100%;
+background-color: red;
+position: absolute;
+bottom: -100;
+left: 0;
+height: 10vh;
+}
+
+.enchristoImgContainer{
+    width: 100%;
+    place-items: center;
+}
+
+.enchristoImgContainer img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    object-position: center;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.enchristoTitleContainer{
+    width: 50%;
+    height: 100%;
+}
