@@ -1,36 +1,40 @@
-.mainRelativeEnchristoContainer{
+.mainRelativeEnchristoContainer {
     /* position: relative; */
 }
 
 
-.mainEnchristoContainer{
+.mainEnchristoContainer {
     background-color: var(--quarternery-main);
-    height: 80vh;
-    padding: 8rem;
+    /* height: 80vh; */
+    padding-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
-.mainEnchristoContainer .imgPlusTitleContainer{
-display: flex;
-flex-direction: row;
-margin-left: 10rem;
-margin-right: 10rem;
-width: 80%;
-height: 100%;
-background-color: red;
-position: absolute;
-bottom: -100;
-left: 0;
-height: 10vh;
-}
-
-.enchristoImgContainer{
+.mainEnchristoContainer .imgPlusTitleContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
     width: 100%;
-    place-items: center;
+    height: 100vh;
+    /* background-color: red; */
 }
 
-.enchristoImgContainer img{
+.enchristoImgContainer {
+    width: 50%;
+    height: 100%;
+    place-items: center;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10vh; */
+}
+
+.enchristoImgContainer img {
     object-fit: cover;
     height: 100vh;
     width: 100%;
@@ -42,7 +46,71 @@ height: 10vh;
     background-attachment: scroll;
 }
 
-.enchristoTitleContainer{
+.enchristoTitleContainer {
     width: 50%;
+    /* background-color: #fff; */
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0%;
+}
+
+.enchristoTitleContainer .mainHeadingContainer {
+    /* background-color: red; */
+    width: 100%;
+}
+
+.enchristoTitleContainer .mainHeadingContainer h1 {
+    color: var( --contrast-main);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Anton, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    transition:.3s;
+}
+
+.enchristoTitleContainer .mainHeadingContainer h1:hover{
+    color:var( --main-color)
+    /* color: #ad4500; */
+}
+
+.enchristoTitleContainer .subHeadingContainer{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.enchristoTitleContainer .subHeadingContainer .dateText{
+    color: var(--main-color);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom: 0.7rem;
+    font-family: Anton, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+.enchristoTitleContainer .subHeadingContainer .venueText{
+    color: var(--contrast-main);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-top:0;
+    font-family: Anton, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    transition: .3s;
+}
+
+.enchristoTitleContainer .subHeadingContainer .venueText:hover{
+    color: var(--main-color);
 }
