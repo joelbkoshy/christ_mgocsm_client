@@ -8,6 +8,7 @@ import '../../styles/Navbar.css'
 const Navbar = () => {
 
     const [menuActive, setMenuActive] = useState<boolean>(false)
+    const [isScrolled,setIsScrolled] = useState<boolean>(false)
 
     const navigate = useNavigate();
     const location = useLocation();

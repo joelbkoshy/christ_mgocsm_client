@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import '../styles/Enchristo.css'
-import poster from '../assets/enchristo/poster.jpg'
+// import poster from '../assets/enchristo/poster.jpg'
 import enchristo from '../assets/enchristo/enchristo.jpg'
 import Footer from '../components/Footer/Footer'
 
@@ -26,7 +26,10 @@ const Enchristo = () => {
             </div>
           </div>
         </div>
-          <Footer />
+          <div className="motto-container">
+            
+          </div>
+        <Footer />
       </div>
     </div>
   )
