@@ -9,7 +9,11 @@ import { useNavigate } from 'react-router-dom'
 
 const Footer = () => {
 
-const navigate = useNavigate()
+
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+  const navigate = useNavigate()
 
   return (
     <div className='footer-mainContainer'>
@@ -26,11 +30,26 @@ const navigate = useNavigate()
       <div className="footerFinalBorderContainer">
         <div className="footerWrapper">
           <div className="NavItems">
-            <a onClick={()=>navigate("/")}><span>Home</span></a>
-            <a onClick={()=>navigate("/enchristo")}><span>Enchristo'24</span></a>
-            <a onClick={()=>navigate("/about-us")}><span>About Us</span></a>
-            <a onClick={()=>navigate("/gallery")}><span>Gallery</span></a>
-            <a onClick={()=>navigate("/contact")}><span>Contact</span></a>
+            <a onClick={() => {
+              scrollTop()
+              navigate("/")
+            }}><span>Home</span></a>
+            <a onClick={() => {
+              scrollTop()
+              navigate("/enchristo")
+            }}><span>Enchristo'24</span></a>
+            <a onClick={() => {
+              scrollTop()
+              navigate("/about-us")
+            }}><span>About Us</span></a>
+            {/* <a onClick={() => {
+              scrollTop()
+              navigate("/gallery")
+            }}><span>Gallery</span></a> */}
+            <a onClick={() => {
+              scrollTop()
+              navigate("/contact")
+            }}><span>Contact</span></a>
           </div>
           <div className='socialMediaHandles'>
             <a href="https://www.instagram.com/christmgocsm"><img src={Insta} alt="" className='InstaLogo' /></a>

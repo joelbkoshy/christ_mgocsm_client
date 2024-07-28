@@ -8,7 +8,7 @@ import '../../styles/Navbar.css'
 const Navbar = () => {
 
     const [menuActive, setMenuActive] = useState<boolean>(false)
-    const [isScrolled,setIsScrolled] = useState<boolean>(false)
+    const [isScrolled, setIsScrolled] = useState<boolean>(false)
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -52,9 +52,27 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", hideNav);
     }, [])
 
+    // useEffect(() => {
+
+    //     const bgColorNav = () => {
+    //         if (window.scrollY > 1000) {
+    //             setIsScrolled(true)
+    //         }
+    //         else {
+    //             setIsScrolled(false)
+    //         }
+    //     }
+    //     window.addEventListener("scroll", bgColorNav)
+    //     return () => window.removeEventListener("scroll", bgColorNav)
+    // }, [])
+
+
+
 
     return (
-        <div className='nav-container' ref={nav}>
+        <div className={isScrolled  ? 'nav-container navBgColor' : 'nav-container' }
+
+            ref={nav}>
             <div className="left">
                 <Link to={"/"}>
                     <img className='christ-logo' src={christMgocsm} onClick={handleNavigation} alt="" />
@@ -62,31 +80,31 @@ const Navbar = () => {
             </div>
             <div className="middle">
                 <ul>
-                    <li><Link className='mid-text-font fw-bold' to={"/"}>Home</Link></li>
-                    <li><Link className='mid-text-font fw-bold' to={"/enchristo"}>Enchristo'24</Link></li>
-                    <li><Link className='mid-text-font fw-bold' to={"/about-us"}>About Us</Link></li>
-                    <li><Link className='mid-text-font fw-bold' to={"/gallery"}>Gallery</Link></li>
-                    <li><Link className='mid-text-font fw-bold' to={"/contact"}>Contact</Link></li>
+                    <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/"}>Home</Link></li>
+                    <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/enchristo"}>Enchristo'24</Link></li>
+                    <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/about-us"}>About Us</Link></li>
+                    {/* <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/gallery"}>Gallery</Link></li> */}
+                    <li onClick={scrollTop}><Link className='mid-text-font fw-bold' to={"/contact"}>Contact</Link></li>
                 </ul>
             </div>
             <div className="right">
                 <a href="https://chat.whatsapp.com/Gt29YrN2MSW2bIF39ilrtMj"><button className='button-5'>Join Now</button></a>
                 {
                     menuActive ?
-                       <img src={close} alt="" onClick={()=>setMenuActive(false)} />
+                        <img src={close} alt="" onClick={() => setMenuActive(false)} />
                         :
-                        <img src={menu} alt=""   onClick={()=>setMenuActive(true)}/>
+                        <img src={menu} alt="" onClick={() => setMenuActive(true)} />
                 }
             </div>
 
             <div className={menuActive ? 'bigMenuActive' : 'bigMenu'}>
                 <div className="list " >
-                    <a className="bigAnim" href="#flash" onClick={() => { }}>Home <span /></a>
-                    <a className="bigAnim" href="#ing" onClick={() => { }}>Enchristo'24 <span /></a>
-                    <a className="bigAnim" href="#eve" onClick={() => { }}>About Us <span /></a>
-                    <a className="bigAnim" href="#val" onClick={() => { }}>Gallery <span /></a>
-                    <a className="bigAnim" href="#val" onClick={() => { }}>Contact <span /></a>
-                    <a className="bigAnim" href="#val" onClick={() => { }}>Join Now <span /></a>
+                    <a className="bigAnim" href="#flash" onClick={() => navigate('/')}>Home <span /></a>
+                    <a className="bigAnim" href="#ing" onClick={() => navigate('/enchristo')}>Enchristo'24 <span /></a>
+                    <a className="bigAnim" href="#eve" onClick={() => navigate('/about-us')}>About Us <span /></a>
+                    {/* <a className="bigAnim" href="#val" onClick={() => { }}>Gallery <span /></a> */}
+                    <a className="bigAnim" href="#val" onClick={() => navigate('/contac')}>Contact <span /></a>
+                    <a className="bigAnim" href="#val">Join Now <span /></a>
                 </div>
             </div>
 

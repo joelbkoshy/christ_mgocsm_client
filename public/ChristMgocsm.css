@@ -196,9 +196,15 @@ body {
     border: 4px solid #ffffff;
 }
 
+.border-main-mid{
+    border: 4px solid var(--main-color)
+}
+
 .border-contrast-mid{
     border: 4px solid var(--contrast-main);
 }
+
+
 
 .border-white-dark {
     border: 6px solid #ffffff;
