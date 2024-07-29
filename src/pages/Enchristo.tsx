@@ -199,7 +199,7 @@ const Enchristo = () => {
                                 <div className="img-flex">
                                     <div className="img-item">
                                         <img className="imgAnim" src={qurbana} alt="Flash Mob" loading="lazy" />
-                                        <span className="cap cali">Holy Qurbana: Chief Celebrant - Rev.Fr.Vivek Varghese </span>
+                                        <span className="cap cali">Holy Qurbana: Chief Celebrant - Rev.Fr.Dr.Vivek Varghese </span>
                                     </div>
                                 </div>
                                 <div className="img-flex">

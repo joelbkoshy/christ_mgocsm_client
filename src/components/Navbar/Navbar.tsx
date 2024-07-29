@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import christMgocsm from '../../assets/logos/christMgocsm-trans.png'
+import christMgocsm from '../../assets/logos/1000068258-removebg[1].png'
 import menu from '../../assets/menu/menu.png'
 import close from '../../assets/menu/close.png'
 import '../../styles/Navbar.css'

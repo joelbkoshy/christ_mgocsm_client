@@ -55,16 +55,16 @@ const Home = () => {
   const latestNews: any[] = [
     {
       img_src: "assets/home/vivek.jpg",
-      dateTime: "March 16, 2024",
-      mainTitle: "CAMPUS TOUR",
-      news: "Organised campus tour with Rev.Fr.Vivek Varghese after welcoming to Christ MGOCSM Family"
+      dateTime: "August 5, 2024",
+      mainTitle: "Holy Qurbana",
+      news: "Holy Qurbana by the presence of H.G. Geevarghese Mar Philoxenos, Asst. Metropolitan of Bangalore Diocese"
     },
     {
       img_src: "assets/home/nombu.jpg",
       dateTime: "March 13, 2024",
       mainTitle: "Holy Lent",
       news: "Conducting evening prayer during lent coordinated by Rev. Fr. Jacob Varghese"
-    }, 
+    },
     {
       img_src: "assets/home/test.jpg",
       dateTime: "February 11, 2023",
@@ -86,7 +86,7 @@ const Home = () => {
       dateTime: "January 20, 2024",
       mainTitle: "Jamming Session",
       news: "Organised Jamming Session near Bird's Park "
-    },  {
+    }, {
       img_src: "assets/home/2.jpg",
       dateTime: "January 11, 2023",
       mainTitle: "ORTHODOX THEOLOGY SEMINARY STUDENTS VISIT",
@@ -102,7 +102,7 @@ const Home = () => {
 
   const bishopsData: any[] = [{
     img_src: "assets/thirumenis/bava.jpg",
-    mainHeading: "His Holiness Moron Mar Baselius Marthoma Mathews III ",
+    mainHeading: "His Holiness Moran Mar Baselios Marthoma Mathews III ",
     subHeading: "Catholicose of the East and The Malankara Metropolitan",
     h2_fontSize: "18px",
     h5_fontSize: "12px"
@@ -125,7 +125,7 @@ const Home = () => {
     {
       img_src: "assets/achans/vivek_achan.jpg",
       mainHeading: "Rev. Fr. Dr. Vivek Varghese",
-      subHeading: "MGOCSM GENERAL SECRETARY",
+      subHeading: "GENERAL SECRETARY \n GLOBAL MGOCSM",
       h2_fontSize: "15px",
       h5_fontSize: "12px"
     }, {
@@ -140,65 +140,30 @@ const Home = () => {
   const servantsData: any[] = [{
     img_src: "assets/servants/dn_dennis.jpg",
     name: "Dn. Dennis Reji",
-    position: "Mentor",
-    class: "2 MSW CCP"
+    // position: "Core Committee"
   },
   {
-    img_src: "assets/servants/joel.jpg",
-    name: "Joel B Koshy",
-    position: "Vice President(Male)",
-    class: "6 MCA B"
-  }, {
-    img_src: "assets/servants/lisa.jpg",
-    name: "Lisa Shibu George",
-    position: "Vice President(Female)",
-    class: "6 BCA B"
-  }, {
-    img_src: "assets/servants/abin.jpg",
-    name: "Abin Joshua Binu",
-    position: "Secretary(Male)",
-    class: "4 BCOM F&A B"
-  }, {
-    img_src: "assets/servants/alivi .jpg",
-    name: "Alivi Susan Kurian",
-    position: "Secretary(Female)",
-    class: "4 BA PEP B"
-  }
-    , {
-    img_src: "assets/servants/ninon.jpg",
-    name: "Ninon Thomas Chittadathu",
-    position: "Treasurer",
-    class: "4 MSAS"
-  }
-    , {
-    img_src: "assets/servants/chris.jpg",
-    name: "Cris Mariam Saj",
-    position: "Interpersonal Head",
-    class: "4 BBA F"
+    img_src: "assets/servants/johan.jpg",
+    name: "Johan V Jacob",
+    // position: "Core Committee"
 
   }, {
-    img_src: "assets/servants/sandra.jpg",
-    name: "Sandra Sara Luke",
-    position: "Media Head",
-    class: "6 PSECO"
-
+    img_src: "assets/servants/kripa.jpg",
+    name: "Kripa Rachel Joji",
+    // position: "Core Committee",
   }, {
-    img_src: "assets/servants/saniya.jpg",
-    name: "Saniya Sunil Jacob",
-    position: "Theshmeshtho Head (Choir)",
-    class: "6 BCOM IF"
-
+    img_src: "assets/servants/jerin.jpg",
+    name: "Jerin M George",
+    // position: "Core Committee"
   }, {
     img_src: "assets/servants/joel_johnson.jpg",
     name: "Joel Varghese Johnson",
-    position: "Magazine Head",
-    class: "4 CME"
+    // position: "Core Committee"
 
   }, {
     img_src: "assets/servants/jeremy.jpg",
     name: "Jeremy Mathew Jose",
-    position: "Sports Coordinator",
-    class: "4 CMS"
+    // position: "Core Committee"
 
   },
   ]
@@ -208,18 +173,54 @@ const Home = () => {
     {
       img_src: "assets/servants/jeremy.jpg",
       name: "Jeremy Mathew Jose",
-      position: "Sports Coordinator",
+      position: "FORMER Sports Coordinator",
       testimony: "My journey with Christ MGOCSM has been transformative, fostering not only my academic resilience but also nurturing my character, guiding me through challenges and shaping me into a stronger individual."
     }, {
       img_src: "assets/servants/abin.jpg",
       name: "Abin Joshua Binu",
-      position: "Secretary (Male)",
+      position: "FORMER Secretary (Male)",
       testimony: "Within Christ Mgocsm, I found not just companionship, but a sacred bond of unity and understanding, illuminating our spiritual journey with the radiant light of enduring friendship."
     }, {
       img_src: "assets/servants/joel.jpg",
       name: "Joel B Koshy",
-      position: "Vice President (Male)",
+      position: "FORMER Vice President (Male)",
       testimony: "In Christ Mgocsm, I discovered more than a spiritual community, it became my sanctuary, my home away from home, where bonds of friendship flourish and souls find solace together."
+    },
+    {
+      img_src: "assets/servants/ninon.jpg",
+      name: "Ninon Thomas Chittadathu",
+      position: "FORMER Treasurer",
+      testimony: "Being a part of Christ MGOCSM has been a journey of growth and self-discovery, where I learned the true essence of service and fellowship, shaping me into a better person."
+    }, 
+    {
+      img_src: "assets/servants/sandra.jpg",
+      name: "Sandra Sara Luke",
+      position: "FORMER Media Head",
+      testimony: "Christ MGOCSM has been a beacon of hope and a pillar of strength for me, offering a space to grow spiritually and personally, surrounded by a supportive and loving community."
+    }, 
+    {
+      img_src: "assets/servants/saniya.jpg",
+      name: "Saniya Sunil Jacob",
+      position: "FORMER Theshmeshtho Head",
+      testimony: "In the nurturing environment of Christ MGOCSM, I found not only lifelong friends but also mentors who guided me, helping me to navigate the complexities of life with faith and courage."
+    }, 
+    {
+      img_src: "assets/servants/lisa.jpg",
+      name: "Lisa Shibu George",
+      position: "FORMER Vice President (Female)",
+      testimony: "Joining Christ MGOCSM was a turning point in my life, providing me with invaluable experiences and lessons in leadership, empathy, and spirituality."
+    }, 
+    {
+      img_src: "assets/servants/chris.jpg",
+      name: "Chris Mariam Saj",
+      position: "FORMER Interpersonal Head",
+      testimony: "Christ MGOCSM has been a cornerstone in my life, a place where I found not just spiritual guidance but also a sense of belonging and a community that feels like family."
+    },
+    {
+      img_src: "assets/servants/alivi .jpg",
+      name: "Alivi Susan Kurian",
+      position: "FORMER Secretary (Female)",
+      testimony: "Being part of Christ MGOCSM has been an enriching experience that deepened my faith and allowed me to connect with like-minded individuals, fostering a sense of unity and purpose."
     }
   ]
 
