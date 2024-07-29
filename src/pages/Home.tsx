@@ -171,11 +171,6 @@ const Home = () => {
 
   const testimonialsData: any[] = [
     {
-      img_src: "assets/servants/jeremy.jpg",
-      name: "Jeremy Mathew Jose",
-      position: "FORMER Sports Coordinator",
-      testimony: "My journey with Christ MGOCSM has been transformative, fostering not only my academic resilience but also nurturing my character, guiding me through challenges and shaping me into a stronger individual."
-    }, {
       img_src: "assets/servants/abin.jpg",
       name: "Abin Joshua Binu",
       position: "FORMER Secretary (Male)",
@@ -191,25 +186,25 @@ const Home = () => {
       name: "Ninon Thomas Chittadathu",
       position: "FORMER Treasurer",
       testimony: "Being a part of Christ MGOCSM has been a journey of growth and self-discovery, where I learned the true essence of service and fellowship, shaping me into a better person."
-    }, 
+    },
     {
       img_src: "assets/servants/sandra.jpg",
       name: "Sandra Sara Luke",
       position: "FORMER Media Head",
       testimony: "Christ MGOCSM has been a beacon of hope and a pillar of strength for me, offering a space to grow spiritually and personally, surrounded by a supportive and loving community."
-    }, 
+    },
     {
       img_src: "assets/servants/saniya.jpg",
       name: "Saniya Sunil Jacob",
       position: "FORMER Theshmeshtho Head",
       testimony: "In the nurturing environment of Christ MGOCSM, I found not only lifelong friends but also mentors who guided me, helping me to navigate the complexities of life with faith and courage."
-    }, 
+    },
     {
       img_src: "assets/servants/lisa.jpg",
       name: "Lisa Shibu George",
       position: "FORMER Vice President (Female)",
       testimony: "Joining Christ MGOCSM was a turning point in my life, providing me with invaluable experiences and lessons in leadership, empathy, and spirituality."
-    }, 
+    },
     {
       img_src: "assets/servants/chris.jpg",
       name: "Chris Mariam Saj",
