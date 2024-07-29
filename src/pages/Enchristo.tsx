@@ -247,7 +247,7 @@ const Enchristo = () => {
                                 <div className="img-flex">
                                     <div className="img-item">
                                         <img className="imgAnim" src="/assets/enchristo/prayersong.png" alt="Inauguration" loading="lazy" />
-                                        <span className="cap cali">Grand Inauguration: A Tapestry of Prestige</span>
+                                        <span className="cap cali">Grand Inaguration: A Tapestry of Prestige</span>
                                     </div>
                                 </div>
                                 <div className="img-flex">
@@ -360,12 +360,6 @@ const Enchristo = () => {
                                     <div className="img-item">
                                         <img className="imgAnim" src="/assets/enchristo/SMILES.jpg" alt="Valedictory" loading="lazy" />
                                         <span className="cap cali">Smiles All Around</span>
-                                    </div>
-                                </div>
-                                <div className="img-flex">
-                                    <div className="img-item">
-                                        <img className="imgAnim" src="/assets/enchristo/final.jpg" alt="Valedictory" loading="lazy" />
-                                        <span className="cap cali">A Tapestry of Happiness</span>
                                     </div>
                                 </div>
                             </div>
