@@ -145,7 +145,7 @@
         bottom: 0;
         display: flex;
         z-index: -1;
-        justify-content: flex-end;
+        justify-content: center;
         background-color: var(--main-color);
         width: 97%;
         height: 30%;
@@ -165,7 +165,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
         letter-spacing: 1px;
         /* font-size: 40px; */
@@ -173,17 +173,17 @@
         font-weight: 400;
         line-height: 1.1em;
     }
-    
+
     .mainCard-container .mainCard-secondaryContainer .bottom .subHeading {
         display: flex;
         /* background-color: aquamarine; */
         width: 100%;
-        padding-top: 2.5rem;
+        padding-top: 5%;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    
+
     .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
         letter-spacing: 1px;
         font-size: 18px;
@@ -321,9 +321,19 @@
         height: 360px;
     }
 
+
+
     .mainCard-container .mainCard-secondaryContainer .bottom {
         width: 81%;
         bottom: 10.7rem;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
+        font-size: 25px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
+        font-size: 15px;
     }
 }
 
@@ -371,6 +381,13 @@
         width: 83%;
         bottom: 14.5rem;
     }
+    .mainCard-container .mainCard-secondaryContainer .bottom .mainHeading h1 {
+        font-size: 20px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom .subHeading p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:555px) {
@@ -399,7 +416,7 @@
 
     .mainCard-container .mainCard-secondaryContainer .bottom {
         width: 78%;
-        bottom: 12rem;
+        bottom: 16rem;
     }
 }
 
@@ -415,7 +432,7 @@
 
     .mainCard-container .mainCard-secondaryContainer .bottom {
         width: 77%;
-        bottom: 30rem;
+        bottom: 17rem;
     }
 }
 
@@ -430,7 +447,7 @@
 
     .mainCard-container .mainCard-secondaryContainer .bottom {
         width: 78%;
-        bottom: 31rem;
+        bottom: 16.5rem;
     }
 }
 
@@ -445,7 +462,7 @@
 
     .mainCard-container .mainCard-secondaryContainer .bottom {
         width: 78%;
-        bottom: 30.5rem;
+        bottom: 17.5rem;
     }
 }
 
@@ -456,6 +473,10 @@
         right: 0;
         width: 360px;
     }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
 }
 
 @media screen and (max-width:412px) {
@@ -465,6 +486,10 @@
         right: 0;
         width: 350px;
     }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
 }
 
 @media screen and (max-width:404px) {
@@ -473,6 +498,11 @@
         top: 0;
         right: 0;
         width: 340px;
+    }
+
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
     }
 
     .mainCard-container {
@@ -489,6 +519,10 @@
         /* height: 20px; */
         /* height: 200px; */
     }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
 }
 
 @media screen and (max-width:381px) {
@@ -497,6 +531,10 @@
         top: 0;
         right: 0;
         width: 310px;
+    }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
     }
 }
 
@@ -507,23 +545,11 @@
         right: 0;
         width: 290px;
     }
+    .mainCard-container .mainCard-secondaryContainer .bottom {
+        width: 78%;
+        bottom: 17rem;
+    }
 }
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
-
-@media screen and (max-width:911px) {}
 
 
 @keyframes fadeIn {
