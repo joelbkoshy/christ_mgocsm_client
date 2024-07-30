@@ -5,56 +5,13 @@ import enchristo from '../assets/enchristo/enchristo.jpg'
 import qurbana from '../assets/enchristo/qurbana.jpg'
 import choir from '../assets/enchristo/choir.png'
 import Footer from '../components/Footer/Footer'
-import poster from '../assets/enchristo/poster.jpg'
 import '../styles/Home.css'
 import achensImg from '../assets/enchristo/sajiachenPreach.png'
-import SlickSlider from '../components/Slider/SlickSlider'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from '@studio-freight/lenis'
 
 
-const latestNews: any[] = [
-    {
-        img_src: "assets/home/vivek.jpg",
-        dateTime: "March 16, 2024",
-        mainTitle: "CAMPUS TOUR",
-        news: "Organised campus tour with Rev.Fr.Vivek Varghese after welcoming to Christ MGOCSM Family"
-    },
-    {
-        img_src: "assets/home/nombu.jpg",
-        dateTime: "March 13, 2024",
-        mainTitle: "Holy Lent",
-        news: "Conducting evening prayer during lent coordinated by Rev. Fr. Jacob Varghese"
-    },
-    {
-        img_src: "assets/home/test.jpg",
-        dateTime: "February 11, 2023",
-        mainTitle: "Holy Qurbana",
-        news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
-    },
-    {
-        img_src: "assets/home/4.jpg",
-        dateTime: "February 3,2024",
-        mainTitle: "ANNUAL general Body meeting",
-        news: "Conducted annual general body meeting at St Thomas Forane Church"
-    }, {
-        img_src: "assets/home/3.jpg",
-        dateTime: "January 22, 2024",
-        mainTitle: "THADAKAM CHARITY VISIT",
-        news: "Visited  and contributed to Christu Shishya Ashramam at Thadakam, Coimbatore "
-    }, {
-        img_src: "assets/home/5.jpg",
-        dateTime: "January 20, 2024",
-        mainTitle: "Jamming Session",
-        news: "Organised Jamming Session near Bird's Park "
-    }, {
-        img_src: "assets/home/2.jpg",
-        dateTime: "January 11, 2023",
-        mainTitle: "ORTHODOX THEOLOGY SEMINARY STUDENTS VISIT",
-        news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
-    }
-]
 
 const Enchristo = () => {
 

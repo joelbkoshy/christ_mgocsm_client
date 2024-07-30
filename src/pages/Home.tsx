@@ -36,6 +36,11 @@ const Home = () => {
       img_src: "assets/home/4.jpg",
       mainHeading: "WEEKLY EVENING PRAYERS",
       subHeading: "Conducting Saturday Sandhya Namaskaram at St.Thomas Forane Church, followed by meetings."
+    },
+    {
+      img_src:"assets/home/test1.jpg"
+      ,mainHeading:"MONTHLY HOLY QURBANA",
+      subHeading:"Conducting Monthly Holy Qurbana at St Gaspar Bhavan, Precious Blood Missionaries"
     }
   ]
 
@@ -66,7 +71,7 @@ const Home = () => {
       news: "Conducting evening prayer during lent coordinated by Rev. Fr. Jacob Varghese"
     },
     {
-      img_src: "assets/home/test.jpg",
+      img_src: "assets/home/test1.jpg",
       dateTime: "February 11, 2023",
       mainTitle: "Holy Qurbana",
       news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
@@ -90,7 +95,7 @@ const Home = () => {
       img_src: "assets/home/2.jpg",
       dateTime: "January 11, 2023",
       mainTitle: "ORTHODOX THEOLOGY SEMINARY STUDENTS VISIT",
-      news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
+      news: "Welcomed 27 Orthodox Theological Seminary deacons at Christ Central Campus "
     }
   ]
 

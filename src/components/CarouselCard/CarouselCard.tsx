@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../styles/CarouselCard.css'
-import test from '../../assets/test.jpg'
 
 type carouselCardData = {
     data: {
