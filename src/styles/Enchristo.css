@@ -718,10 +718,14 @@
 
 @media screen and (max-width:455px) {
     .enchristoImgContainer img{
-        height: 25vh;
-        width: 100%;
+        height: 50vh;
+        width: 40vh;
     }
     .enchristoTitleContainer .mainHeadingContainer h1 {
         font-size: 2rem;
+       }
+
+       .enchristoMainImageContainer .mainImageTextContainer h1{
+        font-size: 40px;
        }
 }
