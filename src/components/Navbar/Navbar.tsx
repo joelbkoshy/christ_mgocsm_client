@@ -70,7 +70,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={isScrolled  ? 'nav-container navBgColor' : 'nav-container' }
+        <div className={isScrolled ? 'nav-container navBgColor' : 'nav-container'}
 
             ref={nav}>
             <div className="left">
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="right">
-                <a href="https://chat.whatsapp.com/Gt29YrN2MSW2bIF39ilrtMj"><button className='button-5'>Join Now</button></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScB53c0ROuqAI0WJ_44dXkzJkce-XsSdxJv7MMwi0vGNfGumQ/viewform"><button className='button-5'>Join Now</button></a>
                 {
                     menuActive ?
                         <img src={close} alt="" onClick={() => setMenuActive(false)} />
@@ -99,12 +99,12 @@ const Navbar = () => {
 
             <div className={menuActive ? 'bigMenuActive' : 'bigMenu'}>
                 <div className="list " >
-                    <a className="bigAnim" href="#flash" onClick={() => navigate('/')}>Home <span /></a>
-                    <a className="bigAnim" href="#ing" onClick={() => navigate('/enchristo')}>Enchristo'24 <span /></a>
-                    <a className="bigAnim" href="#eve" onClick={() => navigate('/about-us')}>About Us <span /></a>
+                    <a className="bigAnim" href="/" >Home <span /></a>
+                    <a className="bigAnim" href="/enchristo" >Enchristo'24 <span /></a>
+                    <a className="bigAnim" href="/about-us" >About Us <span /></a>
                     {/* <a className="bigAnim" href="#val" onClick={() => { }}>Gallery <span /></a> */}
-                    <a className="bigAnim" href="#val" onClick={() => navigate('/contac')}>Contact <span /></a>
-                    <a className="bigAnim" href="#val">Join Now <span /></a>
+                    <a className="bigAnim" href="/contact" >Contact <span /></a>
+                    <a className="bigAnim" href="https://docs.google.com/forms/d/e/1FAIpQLScB53c0ROuqAI0WJ_44dXkzJkce-XsSdxJv7MMwi0vGNfGumQ/viewform">Join Now <span /></a>
                 </div>
             </div>
 

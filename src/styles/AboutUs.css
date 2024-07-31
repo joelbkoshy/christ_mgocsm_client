@@ -1,7 +1,7 @@
 .aboutUsContainer {
     padding-top: 10rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -70,6 +70,21 @@
     line-height: 40px;
     letter-spacing: 1.1px;
 
+}
+
+
+@media screen and (max-width:910px) {
+    .aboutUsContainer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .aboutUsContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media screen and (max-width:432px) {
