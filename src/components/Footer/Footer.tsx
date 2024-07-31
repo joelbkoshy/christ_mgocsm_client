@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <span>Make a difference today: Join us for a spiritual journey of compassion and worship.</span>
       <div className="JoinNowButtonContainer">
-        <a href="https://chat.whatsapp.com/Gt29YrN2MSW2bIF39ilrtMj"><button className='button-5'>Join Now</button></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScB53c0ROuqAI0WJ_44dXkzJkce-XsSdxJv7MMwi0vGNfGumQ/viewform"><button className='button-5'>Join Now</button></a>
       </div>
       <div className="footerFinalBorderContainer">
         <div className="footerWrapper">
