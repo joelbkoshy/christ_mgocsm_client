@@ -60,7 +60,7 @@ const Home = () => {
   const latestNews: any[] = [
     {
       img_src: "assets/home/vivek.jpg",
-      dateTime: "August 5, 2024",
+      dateTime: "August 4, 2024",
       mainTitle: "Holy Qurbana",
       news: "Holy Qurbana by the presence of H.G. Geevarghese Mar Philoxenos, Asst. Metropolitan of Bangalore Diocese"
     },
@@ -72,7 +72,7 @@ const Home = () => {
     },
     {
       img_src: "assets/home/test1.jpg",
-      dateTime: "February 11, 2023",
+      dateTime: "February 11, 2024",
       mainTitle: "Holy Qurbana",
       news: "Conducted monthly Holy Qurbana at Precious Blood Chapel"
     },
@@ -93,7 +93,7 @@ const Home = () => {
       news: "Organised Jamming Session near Bird's Park "
     }, {
       img_src: "assets/home/2.jpg",
-      dateTime: "January 11, 2023",
+      dateTime: "January 11, 2024",
       mainTitle: "ORTHODOX THEOLOGY SEMINARY STUDENTS VISIT",
       news: "Welcomed 27 Orthodox Theological Seminary deacons at Christ Central Campus "
     }
